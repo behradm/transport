@@ -26,3 +26,33 @@
 	clear: both;
 	margin: 0 0 1.5em;
 }
+
+/*** Home Page ***/
+/***
+#post-5 {
+	.entry-content {
+		.wp-video { 
+			min-width: 100% !important; min-height: 100% !important; 
+			.mejs-container,.wp-video-shortcode {
+				min-width: 100% !important; min-height: 100% !important; overflow: hidden !important; position: fixed; top: 0; left: 0; 
+				.mejs-inner {
+					.mejs-controls { display: none !important; }
+					.mejs-layers { 
+						.mejs-overlay,.mejs-layer,.mejs-overlay-play {
+							.mejs-overlay-button { display: none; }
+						}
+					}
+				}
+			}
+		}
+	}
+} ***/
+
+.entry-content {
+	margin: 0 auto; 
+	.video-js {
+		min-width: 100%; min-height: 100%; 
+		.video-js,.vjs-tech { position: fixed; top: 0px; left: 0px; height: auto; width: auto; }
+		.vjs-control-bar { position: absolute; top: -1000px; }
+	}
+}
