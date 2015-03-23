@@ -1,5 +1,7 @@
 html {
 	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
 }
 
 *,
@@ -10,6 +12,8 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	height: 100%;
+	width: 100%;
 }
 
 blockquote:before, blockquote:after,

@@ -51,8 +51,18 @@
 .entry-content {
 	margin: 0 auto; 
 	.video-js {
-		min-width: 100%; min-height: 100%; 
-		.video-js,.vjs-tech { position: fixed; top: 0px; left: 0px; height: auto; width: auto; }
+		width: 0 !important; height: 0 !important;
+		.vjs-tech { position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -100; }
 		.vjs-control-bar { position: absolute; top: -1000px; }
 	}
 }
+
+@media (max-width: 800px) { 
+	.video-js {
+		.vjs-tech { display: none; }
+	}
+	body.page-id-5 { background-image: url('img/fallback.png') !important; background-size: cover !important; background-position: 100% 0 !important; background-repeat: no-repeat !important; }
+}
+
+
+
